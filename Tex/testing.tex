@@ -14,7 +14,6 @@
 \usepackage[final]{pdfpages}
 \usepackage{caption}
 
-
 \graphicspath{{Pictures/}}
 
 
@@ -60,14 +59,57 @@
 	
 	\section{Introduction}
 
-	
-	\section{Test Model}
+				This chapter of the document aims to present the findings of the indepth testing done on the Gladios instance of the NavUP application. A test model was used for the various specifications of the core functions and innovations implemented.
+
+		\subsection{Definitions, Acronyms, and Abbreviations}\label{subsec:daa}
+			\begin{table}[h!]
+				\centering
+				\caption{Table of Definitions, Acronyms, and Abbreviations used in this document}
+				\label{tab: Table 1}
+				\begin{tabular}{| m{4cm} | m{12cm} |}
+					\hline
+					\textbf{Term} & \textbf{Definition} \\
+					\hline
+					\hline
 
 		
+					\hline
+					
+
+				\end{tabular}
+			\end{table}
+
+
+		\subsection{Overview}
+			The remainder of this document will consist the test model used during testing, to functional requirements tested as well as the non-functional requirements tested.\\
+
+
+	https://github.com/KeatonPennels/COS-301-Broadsword-Access
+		  
+	\includepdf[scale=0.8,pages=-,pagecommand=\section{Test Model}]{Test_Model.pdf}
+
+		\clearpage
 	\section{List of Service Contracts Tested}
-	
+	NavUP is currently envisioned as a native mobile application that serves to navigate users around the Hatfield campus of the University of Pretoria. This application will be utilised by students, staff and visitors to the Hatfield campus in order to find their way around.\\
 	\subsection{Users}
 \subsubsection{User Registration}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{Input_Values_Required}
+\caption{Input Values Required}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{Test_Cases}
+\caption{Test Cases}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{Use_Case_Based_Testing}
+\caption{Use Case Based Testing}
+\end{figure}
+
 \textbf{\underline{Test Case 1}}\newline
 \textbf{Action:} Fill out all of the user registration details with correct data\newline
 \textbf{Expected Result:} The registration is a success\newline
@@ -113,6 +155,25 @@
 \textbf{Additional Comments:} Since almost half of the registration tests failed, the awarded mark out of ten was reduced to five and a half. This mark was then reduced by one since other improvements such as more feedback could be added in order to improve the registration process. \newline
 
 \subsubsection{User Login}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{userlogin_input_values_required}
+\caption{Input Values Required}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{userlogin_test_cases}
+\caption{Test Cases}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{userlogin_use_case_based_testing}
+\caption{Use Case Based Testing}
+\end{figure}
+
 \textbf{\underline{Test Case 1}}\newline
 \textbf{Action:} Fill out all of the user login details with correct data\newline
 \textbf{Expected Result:} The user will be logged in successfully\newline
@@ -134,6 +195,25 @@
 \textbf{Additional Comments:} Since the actual results of all there test cases were the same as the expected results, the sign in should be awarded full marks. However, since the sign in can still be improved by giving the user more feedback when data is left blank, only 9/10 was awarded as there is still room for improvement.\newline
 
 \subsubsection{Edit Profile}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{editprofile_input_values_required}
+\caption{Input Values Required}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{editprofile_test_cases}
+\caption{Test Cases}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{use_case_based_testing_editprofile}
+\caption{Use Case Based Testing}
+\end{figure}
+
 \textbf{\underline{Test Case 1}}\newline
 \textbf{Action:} Update the user details and fill out all required input fields\newline
 \textbf{Expected Result:} The profile update is successful\newline
@@ -223,7 +303,69 @@ N/A
 \subsubsection{Save Preferences}
 N/A
 
+	\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{registration_input_values_required}
+\caption{Input Values Required}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{registration_test_cases}
+\caption{Test Cases}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{registration_use_case_based_testing}
+\caption{Use Case Based Testing}
+\end{figure}
+	
+	\subsection{Registration}
+Additional comments: 
+
+Feedback in the form of text could have been given to indicate that data needs to be filled in before a successful registration can be achieved.
+
+More should be done in order to ensure that only users with unique usernames are allowed to register
+
+The system should ensure that users are not registered to the application if their given email address is already been used by another user. This is important since email addresses are used to sign into the application.
+
+Since almost half of the registration tests failed, the awarded mark out of ten was reduced to five and a half. One mark was then subtracted from this mark since more feedback could have been given.
+
+Mark awarded: 4.5/10
+
+\subsection{Login:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{login_input_values_required}
+\caption{Input Values Required}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{login_test_cases}
+\caption{Test Cases}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{login_use_case_based_testing}
+\caption{Use Case Based Testing}
+\end{figure}
+
+Additional comments:
+
+Instead of the application taking the user to the navigation page once they have logged in, they could instead be taken to a homepage. 
+
+The sign in can still be improved by giving the user more feedback when data is left blank.
+
+Since the actual results of all of the test cases were the same as the expected results, the sign in should be awarded full marks. However, since the sign in can still be improved by giving the user more feedback when data is left blank, only 9/10 was awarded as there is still room for improvement.
+
+Mark awarded: 9/10
+
 	\section{List of Functional Requirements Tested}
+	This chapter aims to give an overview of the entire NavUP system. The system will be contextualised in order to demonstrate the basic functionality of the system as well as demonstrate how the system interacts with other systems. It will also describe the levels, or types, of users that will utilise the system and describe the functionality that is available to said user. At the end of this chapter, the constraints and assumptions for the system will be addressed.
 	
 	\begin{itemize}
 		\item[$\bullet$] Create route to valid location
@@ -295,6 +437,43 @@ N/A
 \end{itemize}	
 	
 	\section{Evaluation of Test Cases for Non-Functional Requirements}
+	
+\subsection{Security}\label{subsec:overall-security}
+		    \textbf{\underline{Password Protection}}\newline
+		    \textbf{Action:} Attempt to circumvent the password protection\newline
+            \textbf{Expected Result:} The password protection should be secure and impervious to circumvention.\newline
+            \textbf{Actual Result:} The password protection at the login screen is secure and doesn't allow users to login unless their password is correct. The Profile Management page however has a loophole when changing passwords though, in that it allows users to change passwords even if the password they enter into the Old Password field (for authentication) is incorrect.\newline
+            \textbf{Possible Improvements:} The app should lock down the profile if the password is entered incorrectly too many times. The profile can then remain locked until an authentication email is sent to the user allowing them to unlock their profile. \newline
+            \textbf{Mark:} 7/10\newline
+            
+            \textbf{\underline{SQL Injection}}\newline
+		    \textbf{Action:} Attempt to inject SQL code into the database\newline
+            \textbf{Expected Result:} The SQL injection should be blocked by escaping the special characters entered.\newline
+            \textbf{Actual Result:} The SQL injection couldn't be tested because none of the data entered is persisted to a database. However, no code was found to sanitize harmful characters from user input before passing it to the user module. \newline
+            \textbf{Possible Improvements:} The app could escape characters before passing it to the user module. \newline
+            \textbf{Mark:} 2/10\newline
+
+        \subsection{Stability}\label{subsec:overall-stability}
+		    \textbf{\underline{Crash Testing}}\newline
+		    \textbf{Action:} Attempt to crash the Access module through overloading input.\newline
+            \textbf{Expected Result:} The app will remain running.\newline
+            \textbf{Actual Result:} The app avoided crashing but was slowed down to an extent by the large amount of input.\newline
+            \textbf{Possible Improvements:} The app should implement a character limit on input fields to fully guard against this issue.\newline
+            \textbf{Mark:} 8/10\newline
+            
+        \subsection{Accessibility}\label{subsec:overall-accessibility}
+		    \textbf{\underline{Support for disabilities with routes}}\newline
+		    \textbf{Action:} Does the app provide an option for routes that are friendly to people with disabilities?\newline
+            \textbf{Expected Result:} The app does provides such a feature with routes that avoid stairs and follow wheelchair-friendly routes.\newline
+            \textbf{Actual Result:} The app does not provide such a feature.\newline
+            \textbf{Mark:} N/A\newline
+            
+        \textbf{\underline{Support for colour-blindness}}\newline
+		    \textbf{Action:} Does the app provide an option to present the User Interface in a manner that is colour-blind friendly?\newline
+            \textbf{Expected Result:} The app has options for different kinds of colour-blindness.\newline
+            \textbf{Actual Result:} The app doesn't provide support for different kinds of colour-blindness.\newline
+            \textbf{Mark:} N/A\newline
+
 
 %		\includepdf[scale=0.9,pages=-,pagecommand=\section{UML Diagrams}\subsection{Class diagrams}\subsubsection{Points of Interest}]{class_diagram_poi.pdf}
 %		
